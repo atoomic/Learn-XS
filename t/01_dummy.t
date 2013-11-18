@@ -66,6 +66,20 @@ ok 'todo';
 }
 
 {
+	# hash keys -> array
+	my $input = { 'k1' => 1, 'k42' => 42};
+	
+#	my $keys = Learn::XS::hash_keys($input);
+#	is_deeply [ sort @keys ] => [ sort keys %input], "get hash keys";
+}
+
+# TODO
+# - Makefile with perlcc ( on a branch ? )
+# - re-read the build scripts
+# - run perlcc manually on a dummy script
+# - hash keys to array 
+
+{
 	note "get_dual";
 	
 	my $v = Learn::XS::get_dual();
